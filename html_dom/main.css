@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    
+}
+
+
+
+
+
+form {
+    margin-top: 40px;
+    
+}
+
+input, button {
+    display: block;
+    padding: 10px;
+    margin-bottom: 8px;
+    width: 100%;
+    
+}
+
+button {
+    background-color: #9b52d698;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 60%;
+    font-size: 16px;
+    font-style: italic;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27ae5498;
+}
+
+.container h1 {
+    text-align: center; 
+    margin-bottom: 18px;
+}
+
+.container h2{
+    margin-bottom: 18px;
+}
