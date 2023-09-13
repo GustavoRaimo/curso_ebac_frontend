@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin-top: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;   
+}   
+body{
+    text-align: center;
+    margin-top: 0 auto;
+    background-color: #e5e2e2;
+    
+}
+
+ol{
+    list-style: none;
+}
+
+form{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+input, button{
+    padding: 8px;
+    
+}
+
+button{
+    background-color: rgba(81, 34, 156, 0.438);
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+.text-decoration{
+    text-decoration: line-through;
+    cursor: pointer;
+}
