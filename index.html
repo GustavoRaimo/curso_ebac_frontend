@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <H1>Formulário</H1>
+        </header>
+        <div class="form-container">
+            <form>
+                <span>Nome completo</span>
+                <input type="text" name="nome-completo" id="nome-completo" required>
+                <span>Email</span>
+                <input type="email" name="email" id="email" required>
+                <span>Telefone</span>
+                <input type="tel" name="telefone" id="telefone" required>
+                <span>CPF</span>
+                <input type="text" name="cpf" id="cpf" required>
+                <span>Endereço</span>
+                <input type="text" name="endereco" id="endereco" required>
+                <span>CEP</span>
+                <input type="text" name="cep" id="cep" required>
+                <button type="submit">Enviar</button>    
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
