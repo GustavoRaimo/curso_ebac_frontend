@@ -1,0 +1,20 @@
+form button{
+    margin-top: 24px;
+    
+}
+
+h1{
+    padding: 16px;
+}
+
+form{
+    padding: 30px;
+    backdrop-filter: blur(16px);
+    border: 2px solid rgba(0, 0, 0, 0.24);
+    border-radius: 30px;
+}
+
+body{
+    background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg) no-repeat;
+    background-size: cover;
+}
