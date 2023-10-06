@@ -1,37 +1,28 @@
-@import "mapas.less";
+@import "variaveis.less";
+@import "mixins.less"; 
+@import "global.less";
+@import "layout.less";
 
-@breakpointMobile: ~"(max-width: 767px)";
-@breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
-
-.textCenter{
-    text-align: center;
-}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    .reset()
 }
 
 body {
-    background-color: #colors[backgroundColor1];
+    .body-bg()
 }
 
 li {
-    list-style: none;
+    .li-style()
 }
 
 .container {
-    max-width: 1024px;
-    width: 100%;
-    margin: 0 auto;
-
+    .container-style();
     @media @breakpointTablet {
             max-width: 80%;
         .products {
-            grid-template-columns: repeat(2, 48.5%);
-            column-gap: 3%;
+            grid-template-columns: repeat(2, @columnWidth);
+            column-gap: @columnGap;
         }
     }
     @media  @breakpointMobile {
@@ -41,21 +32,15 @@ li {
         }
     
         .products-item  {
-            margin-bottom: 32px;
+            margin-bottom: @itemMarginBottom;
         }
     }
 }
 
 header {
-    background-color: #colors[backgroundColor2];
-    position: sticky;
-    top: 0;
-    left: 0;
+    .header-style();
     .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 0;
+        .container-style-header();
     }
 }
 
@@ -68,22 +53,17 @@ header {
     }
     
     li a {
-        color: #colors[textColor];
+        color: @link-color;
         text-decoration: none;
     }
     
 }
 
 section {
-    padding: 56px 0;
+    .section-pad()
 }
 .products {
-    margin-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(3, 32.66%);
-    column-gap: 1%;
-    row-gap: 4%;
-    width: 100%;
+    .products-style();
     .textCenter();
     
     &-item img {
@@ -93,8 +73,8 @@ section {
 
     &-button {
         display: block;
-        background-color:  #colors[buttonColor1];
-        color: #colors[textColor];
+        background-color:  @button-bg-color;
+        color: @link-color;
         .textCenter();
         padding: 8px 0;
         border-radius: 8px;
@@ -103,7 +83,7 @@ section {
     }
 
     &-button:hover {
-        background-color: #colors[buttonColor2];
+        background-color: @button-hover-bg-color;
     }
 }
 
